@@ -17,10 +17,10 @@ export default function App() {
             <Link to="">Home</Link>
           </li>
           <li>
-            <Link to="about-us">About us</Link>
+            <Link to="items">Items</Link>
           </li>
           <li>
-            <Link to="items">Items</Link>
+            <Link to="contact-us">Contact us</Link>
           </li>
         </ul>
 
