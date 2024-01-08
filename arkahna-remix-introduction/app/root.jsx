@@ -11,7 +11,6 @@ export default function App() {
       </head>
       <body>
         <h1>My awesome Remix app</h1>
-
         <ul>
           <li>
             <Link to="">Home</Link>
@@ -23,9 +22,7 @@ export default function App() {
             <Link to="contact-us">Contact us</Link>
           </li>
         </ul>
-
         <Outlet />
-
         <Scripts />
         <LiveReload />
       </body>

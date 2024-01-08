@@ -11,7 +11,6 @@ export default function ItemPage() {
   return (
     <>
       <h3>Item details</h3>
-
       <p>This is item {itemId}</p>
     </>
   );

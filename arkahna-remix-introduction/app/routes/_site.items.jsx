@@ -5,7 +5,6 @@ export default function ItemsPage() {
   return (
     <>
       <h2>Items</h2>
-
       <ul>
         <li>
           <Link to="1">Item 1</Link>
@@ -17,7 +16,6 @@ export default function ItemsPage() {
           <Link to="3">Item 3</Link>
         </li>
       </ul>
-
       <Outlet />
     </>
   );

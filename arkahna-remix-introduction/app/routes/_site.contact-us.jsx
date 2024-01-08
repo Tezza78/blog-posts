@@ -17,7 +17,6 @@ export default function ContactUsPage() {
   return (
     <>
       <h2>Contact us</h2>
-
       <Form method="post">
         <p>Name</p>
         <p>
