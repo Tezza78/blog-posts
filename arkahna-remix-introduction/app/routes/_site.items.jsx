@@ -1,20 +1,38 @@
-import { Link } from "@remix-run/react";
-import { Outlet } from "@remix-run/react";
+import { Link, Outlet, useLoaderData } from "@remix-run/react";
+import { json } from "@remix-run/node";
 
-export default function ItemsPage() {
+export const loader = async () => {
+  // Get items from data layer
+  const items = [
+    {
+      id: 1,
+      name: "Item 1",
+    },
+    {
+      id: 2,
+      name: "Item 2",
+    },
+    {
+      id: 3,
+      name: "Item 3",
+    },
+  ];
+
+  return json({ items });
+};
+
+export default function ItemsDetailsPage() {
+  const { items } = useLoaderData();
+
   return (
     <>
       <h2>Items</h2>
       <ul>
-        <li>
-          <Link to="1">Item 1</Link>
-        </li>
-        <li>
-          <Link to="2">Item 2</Link>
-        </li>
-        <li>
-          <Link to="3">Item 3</Link>
-        </li>
+        {items.map((item) => (
+          <li key={`${item.id}`}>
+            <Link to={`${item.id}`}>{item.name}</Link>
+          </li>
+        ))}
       </ul>
       <Outlet />
     </>
