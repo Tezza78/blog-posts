@@ -2,7 +2,7 @@ import { Link, Outlet, useLoaderData } from "@remix-run/react";
 import { json } from "@remix-run/node";
 
 export const loader = async () => {
-  // Get items from data layer
+  // Get items from external source
   const items = [
     {
       id: 1,

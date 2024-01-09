@@ -1,5 +1,11 @@
-import { Links, LiveReload, Meta, Outlet, Scripts } from "@remix-run/react";
-import { Link } from "@remix-run/react";
+import {
+  Link,
+  Links,
+  LiveReload,
+  Meta,
+  Outlet,
+  Scripts,
+} from "@remix-run/react";
 
 export default function App() {
   return (

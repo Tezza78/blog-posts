@@ -4,7 +4,7 @@ import { useLoaderData } from "@remix-run/react";
 export const loader = async ({ params }) => {
   const itemId = params.itemId;
 
-  // Get item from data layer
+  // Get item from external source
   const item = {
     id: itemId,
     name: `Item ${itemId}`,
